@@ -24,9 +24,9 @@ print()
 # 1 ~ 1000 합
 sum1 = 0
 
-for v in range(1,1001):
-    print(v) # 디버깅
-    sum1 += v
+#for v in range(1,1001):
+    #print(v) # 디버깅
+    #sum1 += v
 
 print('1 ~ 1000 sum : ', sum1)
 
