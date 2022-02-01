@@ -1,6 +1,3 @@
-from re import S
-
-
 def kyunghoon(begin, end, step):
     sum = 0
     for num in range(begin, end + 1, step):
