@@ -44,17 +44,48 @@ print(Dog.species)
 print(a.species)
 print(b.species)
 
+# 예제2
+# self의 이해
+class SelfTest:
+    def func1():
+        print('Funct called')
+    def func2(self):
+        print(id(self))
+        print('Func2 called')
 
 
+f = SelfTest()
 
+# print(dir(f))
+print(id(f))
+# f.func1() # 예외
+f.func2()
+SelfTest.func1()
+# SelfTest.func2() # 예외
+SelfTest.func2(f)
 
+# 예제3
+# 클래스 변수, 인스턴스 변수
+class Warehouse:
+    # 클래스 변수 = 0
+    stock_num = 0 # 재고
 
+    def __init__(self, name):
+        # 인스턴스 변수(self가 있으니까)
+        self.name = name
+        Warehouse.stock_num += 1
 
+    def __def__(self):
+        Warehouse.stock_num -= 1
 
+user1 = Warehouse('Lee')
+user2 = Warehouse('Cho')
 
+print(Warehouse.stock_num)
 
-
-
-
-
+print(user1.name)
+print(user2.name)
+print(user1.__dict__)
+print(user2.__dict__)
+print(Warehouse.__dict__)
 
