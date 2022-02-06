@@ -82,10 +82,17 @@ user1 = Warehouse('Lee')
 user2 = Warehouse('Cho')
 
 print(Warehouse.stock_num)
-
+# Warehouse.stock_num = 50
 print(user1.name)
 print(user2.name)
 print(user1.__dict__)
 print(user2.__dict__)
-print(Warehouse.__dict__)
+print('before', Warehouse.__dict__)
+print('>>>', user1.stock_num)
+
+del user1
+print('after', Warehouse.__dict__)
+
+
+
 
