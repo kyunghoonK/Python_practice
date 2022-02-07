@@ -115,6 +115,7 @@ c = Dog('july', 4)
 d = Dog('Marry', 10)
 # 메소드 호출
 print(c.info())
+print(d.info())
 # 메소드 호출
 print(c.speak('Wal Wal'))
 print(d.speak('Mung Mung'))
