@@ -20,3 +20,47 @@ cts = f.read()
 print(cts)
 # 반드시 close
 f.close()
+
+# 예제2
+with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
+    c = f.read()
+    print(c)
+    print(iter(c))
+    print(list(c))
+
+print()
+
+# 예제3
+# read() : 전체 읽기 , read(10) : 10Byte
+
+with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
+    c = f.read(20)
+    print(c)
+    c = f.read(20)
+    print(c) #이어서 출력
+    f.seek(0,0) # 다시 처음부터
+
+print()
+
+# 예제4
+# readline : 한 줄 씩 읽기
+
+with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
+    line = f.readline()
+    print(line)
+    line = f.readline()
+    print(line)
+
+
+print()
+
+# 예제5
+# readlines : 전체를 읽은 후 라인 단위 리스트로 저장
+with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
+    cts = f.readlines()
+    print(cts)
+    print()
+    for c in cts:
+        print(c, end='')
+
+print()
