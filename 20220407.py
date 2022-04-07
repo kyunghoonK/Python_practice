@@ -23,3 +23,16 @@ while treehit < 10:
     print("나무를 %d번 찍었습니다." %treehit)
     if treehit == 10:
         print("나무 넘어갑니다.")
+
+# while문 예제2
+prompt = '''
+21.양한빈
+6.기성용
+7.나상호
+11.조영욱
+
+Enter namber:'''
+number = 0
+while number != 3:
+    print(prompt)
+    number = int(input())
