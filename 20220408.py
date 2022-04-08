@@ -44,4 +44,13 @@ while True :
     if coffee == 0:
         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
         break
-        
+
+print()
+print()
+
+# 20 이하의 홀수만 출력하는 프로그램을 만들어보세요.
+a = 0
+while a < 20 :
+    a = a + 1
+    if a % 2 == 0 : continue
+    print(a)
