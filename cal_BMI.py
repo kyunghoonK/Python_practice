@@ -7,6 +7,7 @@ weight = float(input("몸무게를 입력하세요 >>> "))
 # bmi = 몸무게/키 * 키
 bmi = round(weight / height ** 2, 1)
 
+print()
 print("="*20)
 print("BMI 결과")
 print("="*20)
