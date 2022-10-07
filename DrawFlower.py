@@ -32,3 +32,5 @@ petal_size = random.randint(50, 120)
 petal_angle = random.randint(90, 130)
 
 draw_flower(petal_num, petal_size, petal_angle)
+
+t.done()
