@@ -36,3 +36,4 @@ def draw_flower():
     t.end_fill()
 
 draw_flower()
+t.done()
