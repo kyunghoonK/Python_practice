@@ -20,3 +20,4 @@ for x in range(20):
         t.left(144)
     t.end_fill()
 
+t.done()
