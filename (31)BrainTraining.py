@@ -27,5 +27,5 @@ else:
     t.write("오답입니다.", False, "center", ("", 30))
     t.goto(0, -50)
     t.write(f"정답은 {num}입니다.",False, "center", ("", 30))
-    t.togo(0,-100)
+    t.goto(0,-100)
     t.write(f"입력하신 수는 {user_input}입니다.",False, "center", ("", 30))
