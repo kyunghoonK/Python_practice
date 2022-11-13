@@ -58,15 +58,15 @@ import time
 # print(x + z)
 # print(y + z)
 
-# print(x + list(y))
-# print(x + list(z))
+# print(x + list(y)) <- 이 경우 가능
+# print(x + list(z)) <- 이 경우 가능
 
 # 예외 처리 기본
 # try : 에러가 발생 할 가능성이 있는 코드 실행
 # except 에러명1: 여러개 가능
 # except 에러명2:
 # else : try 블록의 에러가 없을 경우 실행
-# finally : 항상 실행
+# finally : 항상 마지막에 실행
 
 name = ['Kim', 'Lee', 'Park']
 
@@ -94,7 +94,7 @@ name = ['Kim', 'Lee', 'Park']
 
 # print()
 
-# 예제 3
+# 예제 3 - 에러 내용 출력
 
 # try:
 #     z = 'Kim'
