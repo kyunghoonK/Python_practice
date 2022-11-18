@@ -20,12 +20,12 @@ import pickle
 
 f = open("test.obj", 'wb')
 obj = {1 : 'python', 2 : 'study', 3 : 'basic'}
-pickle.dump(obj, f)
+pickle.dump(obj, f) # 쓸때는 dump
 f.close()
 
 # 예제5(읽기)
 f = open('test.obj', 'rb')
-data = pickle.load(f)
+data = pickle.load(f) # 읽을때는 load
 print(data, type(data))
 f.close()
 
