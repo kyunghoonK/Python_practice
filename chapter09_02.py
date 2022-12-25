@@ -24,12 +24,12 @@ with open('./resource/test1.csv', 'r') as f:
         # 타입 확인(리스트)
         # print(type(c))
         # list to str
-        print(' '.join(c))
+        print(' : '.join(c))
 
 
 # 예제2
 with open('./resource/test2.csv', 'r') as f:
-    reader = csv.reader(f, delimiter=',')
+    reader = csv.reader(f, delimiter='|')
 
     for c in reader:
         print(c)
