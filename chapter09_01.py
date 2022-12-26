@@ -87,12 +87,18 @@ with open('./resource/contents1.txt', 'w') as f:
     f.write('last time\n')
 
 # 예제 2
-with open('./resource/contents1.txt', 'at') as f:
+with open('./resource/contents1.txt', 'a') as f:
     f.write('do not miss\n')
 
+# 예제 3
+# writelines : 리스트 -> 파일
+with open('./resource/contents2.txt', 'w') as f:
+    list = ['Orange\n', 'Apple\n', 'Banana\n', 'Melon\n']
+    f.writelines(list)
 
-
-
-
-
+# 예제 4
+with open('./resource/contents2.txt', 'w') as f:
+    print('Test Text Write!', file=f)
+    print('Test Text Write!', file=f)
+    print('Test Text Write!', file=f)
 
