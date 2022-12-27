@@ -75,4 +75,3 @@ with open('./resource/write2.csv', 'w', encoding='utf-8') as f:
 
     for v in w:
         wt.writerow({'One': v[0], 'Two' : v[1], 'Three' : v[2]})
-        
